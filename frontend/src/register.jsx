@@ -66,7 +66,7 @@ function Register() {
     
     setIsLoading(true)
     try {
-      const res = await fetch('http://localhost:5000/api/auth/register', {
+      const res = await fetch('http://98.81.166.219:5000/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -83,6 +83,7 @@ function Register() {
       } else {
         alert(data.message || 'Registration failed')
       }
+    // eslint-disable-next-line no-unused-vars
     } catch (error) {
       alert('Connection error')
     }

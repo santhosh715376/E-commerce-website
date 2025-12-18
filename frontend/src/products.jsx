@@ -14,13 +14,14 @@ function Products() {
   const { addToCart } = useCart()
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/immutability
     fetchProducts()
   }, [])
 
   const fetchProducts = async () => {
     try {
       const token = localStorage.getItem('token')
-      const res = await fetch('http://localhost:5000/api/products', {
+      const res = await fetch('http://98.81.166.219:5000/api/products', {
         headers: {
           'Authorization': token
         }

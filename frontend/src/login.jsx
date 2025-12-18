@@ -15,7 +15,7 @@ function Login() {
     if (email && password) {
       setIsLoading(true)
       try {
-        const res = await fetch('http://localhost:5000/api/auth/login', {
+        const res = await fetch('http://98.81.166.219:5000/api/auth/login', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ email, password })
@@ -28,6 +28,7 @@ function Login() {
         } else {
           alert(data.message || 'Login failed')
         }
+      // eslint-disable-next-line no-unused-vars
       } catch (error) {
         alert('Connection error')
       }
