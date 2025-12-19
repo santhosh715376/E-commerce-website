@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react'
 import { useCart } from './contexts'
 
 const fallbackProducts = [
-  { _id: 1, name: 'MacBook Pro 16"', price: 2499, image: 'https://via.placeholder.com/300x300?text=MacBook+Pro', category: 'Laptops' },
-  { _id: 2, name: 'iPhone 15 Pro', price: 999, image: 'https://via.placeholder.com/300x300?text=iPhone+15', category: 'Smartphones' },
-  { _id: 3, name: 'AirPods Pro', price: 249, image: 'https://via.placeholder.com/300x300?text=AirPods+Pro', category: 'Audio' },
-  { _id: 4, name: 'iPad Air', price: 599, image: 'https://via.placeholder.com/300x300?text=iPad+Air', category: 'Tablets' }
+  { _id: 1, name: 'MacBook Pro 16"', price: 2499, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop', category: 'Laptops' },
+  { _id: 2, name: 'iPhone 15 Pro', price: 999, image: 'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&h=400&fit=crop', category: 'Smartphones' },
+  { _id: 3, name: 'AirPods Pro', price: 249, image: 'https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=400&h=400&fit=crop', category: 'Audio' },
+  { _id: 4, name: 'iPad Air', price: 599, image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=400&h=400&fit=crop', category: 'Tablets' },
+  { _id: 5, name: 'Apple Watch Ultra', price: 799, image: 'https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=400&h=400&fit=crop', category: 'Wearables' },
+  { _id: 6, name: 'Canon EOS R5', price: 3899, image: 'https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=400&h=400&fit=crop', category: 'Cameras' }
 ]
 
 function Products() {
